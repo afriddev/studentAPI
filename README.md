@@ -7,7 +7,7 @@
 ⭐ **Get All Students**
 
 ```js
-// try -> https://studentapi.vercel.app/api/allUsers
+// try -> https://studentmgmtapi.vercel.app/api/allUsers
 async function getStudents() {
   let response = await fetch("http://localhost:300/api/allStudents");
   let serverData = await response.json();
@@ -23,7 +23,7 @@ async function getStudents() {
 ⭐ **Create Student**
 
 ```js
-// try -> https://studentapi.vercel.app/api/createStudent
+// try -> https://studentmgmtapi.vercel.app/api/createStudent
 /* Optional fields 
  -> image
  -> lastName
@@ -57,7 +57,7 @@ async function getUsers() {
 ⭐ **Get One Student**
 
 ```js
-// try -> https://studentapi.vercel.app/api/getStudent
+// try -> https://studentmgmtapi.vercel.app/api/getStudent
 async function getStudent() {
   let response = await fetch("http://localhost:300/api/getStudent", {
     method: "POST",
@@ -79,7 +79,7 @@ async function getStudent() {
 ⭐ **Delete Student**
 
 ```js
-// try -> https://studentapi.vercel.app/api/deleteStudent
+// try -> https://studentmgmtapi.vercel.app/api/deleteStudent
 async function deleteStudent() {
   let response = await fetch("http://localhost:300/api/deleteStudent", {
     method: "POST",
@@ -101,7 +101,7 @@ async function deleteStudent() {
 ⭐ **Edit Student Details**
 
 ```js
-// try -> https://studentapi.vercel.app/api/editStudent
+// try -> https://studentmgmtapi.vercel.app/api/editStudent
 async function getStudent() {
   let response = await fetch("http://localhost:300/api/editStudent", {
     method: "POST",

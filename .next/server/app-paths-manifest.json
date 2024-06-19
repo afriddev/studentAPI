@@ -1,0 +1,9 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/api/deleteStudent/route": "app/api/deleteStudent/route.js",
+  "/api/editStudent/route": "app/api/editStudent/route.js",
+  "/page": "app/page.js",
+  "/api/allStudents/route": "app/api/allStudents/route.js",
+  "/api/createStudent/route": "app/api/createStudent/route.js",
+  "/api/getStudent/route": "app/api/getStudent/route.js"
+}
