@@ -13,7 +13,7 @@ async function getStudents() {
   let serverData = await response.json();
   /**
    * console.log(serverData.message)
-   * console.log(serverData.users)
+   * console.log(serverData.students)
    *
    */
   return serverData;
