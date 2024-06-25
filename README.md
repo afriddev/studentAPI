@@ -7,7 +7,7 @@
 ⭐ **Get All Students**
 
 ```js
-// try -> https://studentmgmtapi.vercel.app/api/allUsers
+// try -> https://studentmgmtapi.vercel.app/api/allStudents
 async function getStudents() {
   let response = await fetch("http://localhost:300/api/allStudents");
   let serverData = await response.json();
