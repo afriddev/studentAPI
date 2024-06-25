@@ -10,7 +10,7 @@ export async function GET() {
             if (students.length > 0) {
                 return NextResponse.json({
                     message: "success",
-                    studnets: students
+                    students: students
                 })
             }
             else {
