@@ -7,9 +7,12 @@
 ⭐ **Get All Students**
 
 ```js
+<<<<<<< HEAD
 // try -> https://studentmgmtapi.vercel.app/api/allStudents
+=======
+>>>>>>> d3a4824 (updated README.md file)
 async function getStudents() {
-  let response = await fetch("http://localhost:300/api/allStudents");
+  let response = await fetch("https://studentmgmtapi.vercel.app/api/allStudents");
   let serverData = await response.json();
   /**
    * console.log(serverData.message)
@@ -23,15 +26,23 @@ async function getStudents() {
 ⭐ **Create Student**
 
 ```js
-// try -> https://studentmgmtapi.vercel.app/api/createStudent
+// try -> 
 /* Optional fields 
  -> image
  -> lastName
  -> attended
  -> attendence
 */
+
+/* Mandatory fields 
+ -> firstName
+ -> id
+ -> mobileNumber
+ -> emailId
+*/
+
 async function getUsers() {
-  let response = await fetch("http://localhost:300/api/createStudent", {
+  let response = await fetch("https://studentmgmtapi.vercel.app/api/createStudent", {
     method: "POST",
     body: JSON.stringify({
       firstName: "Shaik",
@@ -57,9 +68,8 @@ async function getUsers() {
 ⭐ **Get One Student**
 
 ```js
-// try -> https://studentmgmtapi.vercel.app/api/getStudent
 async function getStudent() {
-  let response = await fetch("http://localhost:300/api/getStudent", {
+  let response = await fetch("https://studentmgmtapi.vercel.app/api/getStudent", {
     method: "POST",
     body: JSON.stringify({
       emailId: "afriayan01@gmail.com",
@@ -69,7 +79,6 @@ async function getStudent() {
   let serverData = await response.json();
   /**
    * console.log(serverData.message)
-   * console.log(serverData.data)
    *
    */
   return serverData;
@@ -79,9 +88,8 @@ async function getStudent() {
 ⭐ **Delete Student**
 
 ```js
-// try -> https://studentmgmtapi.vercel.app/api/deleteStudent
 async function deleteStudent() {
-  let response = await fetch("http://localhost:300/api/deleteStudent", {
+  let response = await fetch("https://studentmgmtapi.vercel.app/api/deleteStudent", {
     method: "POST",
     body: JSON.stringify({
       emailId: "afriayan01@gmail.com",
@@ -91,7 +99,6 @@ async function deleteStudent() {
   let serverData = await response.json();
   /**
    * console.log(serverData.message)
-   * console.log(serverData.data)
    *
    */
   return serverData;
@@ -101,9 +108,8 @@ async function deleteStudent() {
 ⭐ **Edit Student Details**
 
 ```js
-// try -> https://studentmgmtapi.vercel.app/api/editStudent
 async function getStudent() {
-  let response = await fetch("http://localhost:300/api/editStudent", {
+  let response = await fetch("https://studentmgmtapi.vercel.app/api/editStudent", {
     method: "POST",
     body: JSON.stringify({
       emailId: "afriayan01@gmail.com",
@@ -116,7 +122,6 @@ async function getStudent() {
   let serverData = await response.json();
   /**
    * console.log(serverData.message)
-   * console.log(serverData.data)
    *
    */
   return serverData;
