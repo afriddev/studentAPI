@@ -7,6 +7,7 @@ async function connectDB(){
         }
     )
     .catch((e)=>{
+        console.log()
         console.log(e)
     })
 }
